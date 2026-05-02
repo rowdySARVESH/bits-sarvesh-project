@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
-@DataJpaTest
+@DataJpaTest(properties = "spring.sql.init.mode=never")
 public class LiftRecordRepositoryTest {
 
     @Autowired
